@@ -2,7 +2,7 @@ from pathlib import Path
 from google.cloud import texttospeech
 
 BREAKING_LINE = 100000 # None if you are going to send all lines
-DATASET_FILE_PATH = "commons_basque_dataset.txt" # Change the dataset filename to your needs
+DATASET_FILE_PATH = "common_basque_dataset.txt" # Change the dataset filename to your needs
 
 client = texttospeech.TextToSpeechClient()
 voice = texttospeech.VoiceSelectionParams(language_code="eu-ES",name="eu-ES-Standard-B",ssml_gender=texttospeech.SsmlVoiceGender.FEMALE)
